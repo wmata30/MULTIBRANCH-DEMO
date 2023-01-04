@@ -1,10 +1,9 @@
 pipeline {
 
-    agent {
-        node {
-            //label 'master'
-        }
-    }
+    agent any 
+  tools {
+    maven "MAVEN"
+  }
 
     options {
         buildDiscarder logRotator( 
